@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import IndexPage from './pages/IndexPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <IndexPage />
-  </React.StrictMode>
+  <Router>
+    <Routes>
+      <Route path="/" element={<IndexPage />} exact />
+    </Routes>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function
