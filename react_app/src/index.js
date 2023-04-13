@@ -6,6 +6,7 @@ import {
   Route,
 } from 'react-router-dom';
 import './index.css';
+import "@patternfly/react-core/dist/styles/base.css";
 import reportWebVitals from './reportWebVitals';
 import IndexPage from './pages/IndexPage';
 
