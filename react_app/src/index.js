@@ -9,11 +9,13 @@ import './index.css';
 import "@patternfly/react-core/dist/styles/base.css";
 import reportWebVitals from './reportWebVitals';
 import IndexPage from './pages/IndexPage';
+import NavBar from './NavBar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <Routes>
+    <NavBar />
+    <Routes id="page-body">
       <Route path="/" element={<IndexPage />} exact />
     </Routes>
   </Router>
