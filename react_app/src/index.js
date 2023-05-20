@@ -9,12 +9,13 @@ import './index.css';
 import "@patternfly/react-core/dist/styles/base.css";
 import reportWebVitals from './reportWebVitals';
 import IndexPage from './pages/IndexPage';
+import { HOME_ROUTE } from './RouteConstants';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
     <Routes>
-      <Route path="/" element={<IndexPage />} exact />
+      <Route path={HOME_ROUTE} element={<IndexPage />} exact />
     </Routes>
   </Router>
 );
