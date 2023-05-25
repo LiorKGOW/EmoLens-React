@@ -8,14 +8,22 @@ import {
 import './index.css';
 import "@patternfly/react-core/dist/styles/base.css";
 import reportWebVitals from './reportWebVitals';
+
+import { HOME_ROUTE, LOGIN_ROUTE, LOGIN_FORGOT_ROUTE, ACCOUNT_CREATE_ROUTE } from './RouteConstants';
+
 import IndexPage from './pages/IndexPage';
-import { HOME_ROUTE } from './RouteConstants';
+import Login from './pages/Login';
+import ForgotLoginPage from './pages/ForgotLoginPage';
+import CreateAccountPage from './pages/CreateAccountPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
     <Routes>
       <Route path={HOME_ROUTE} element={<IndexPage />} exact />
+      <Route path={LOGIN_ROUTE} element={<Login />} />
+      <Route path={LOGIN_FORGOT_ROUTE} element={<ForgotLoginPage />} />
+      <Route path={ACCOUNT_CREATE_ROUTE} element={<CreateAccountPage />} />
     </Routes>
   </Router>
 );
