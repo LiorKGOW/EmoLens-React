@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar-emolens-logo{
+  width: 180px;
+  height: 40px;
+  margin: 0 auto;
+  margin-right: 15px;
+  display: block;
+}
