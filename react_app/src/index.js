@@ -6,11 +6,11 @@ import {
   Route,
 } from 'react-router-dom';
 import './index.css';
-// import "@patternfly/react-core/dist/styles/base.css";
+import "@patternfly/react-core/dist/styles/base.css";
 import reportWebVitals from './reportWebVitals';
 
 // Pages :
-import Gallery from './pages/Gallery';
+import GalleryPage from './pages/GalleryPage';
 import EmptyPage from './pages/EmptyPage';
 
 import { HOME_ROUTE, PROFILE_ROUTE, ABOUT_ROUTE } from './RouteConstants';
@@ -19,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
     <Routes>
-      <Route path={HOME_ROUTE} element={<Gallery />} exact />
+      <Route path={HOME_ROUTE} element={<GalleryPage />} exact />
       <Route path={PROFILE_ROUTE} element={<EmptyPage />} exact />
       <Route path={ABOUT_ROUTE} element={<EmptyPage />} exact />
     </Routes>

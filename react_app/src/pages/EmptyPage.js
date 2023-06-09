@@ -1,17 +1,32 @@
+import { Container, Typography } from "@mui/material";
+
 import NavBar from "../components/NavBar";
-import { Typography } from "@mui/material";
+import Footer from "../components/Footer";
 
 const EmptyPage = () => {
   return (
     <>
       <NavBar />
-      <Typography variant="h3" gutterBottom align="center">
-        Unfortunately, this page is empty for now...
-      </Typography>
-
-      <Typography variant="body1" gutterBottom align="center">
-        It would be added in the future !
-      </Typography>
+      <Container maxWidth="sm" className="empty-page-content">
+        <Typography
+          component="h1"
+          variant="h2"
+          align="center"
+          color="text.primary"
+          gutterBottom
+        >
+          Unfortunately, this page is empty for now...
+        </Typography>
+        <Typography
+          variant="h5"
+          align="center"
+          color="text.secondary"
+          paragraph
+        >
+          It will be added in the future !
+        </Typography>
+      </Container>
+      <Footer />
     </>
   );
 };
