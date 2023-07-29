@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography, Button } from "@mui/material";
 
 import GalleryItem from "./GalleryItem";
 
@@ -7,6 +7,9 @@ const Gallery = (props) => {
   const { cards } = props;
 
   const isCardsEmpty = cards.length > 0;
+
+  // todo: add card click handler
+  const handleAddCardClick = () => {};
 
   return (
     <Container sx={{ py: 5 }} maxWidth="md" className="card-gallery">
@@ -24,6 +27,9 @@ const Gallery = (props) => {
           </Typography>
         )}
       </Grid>
+      <Button variant="contained" size="large" onClick={handleAddCardClick} id="add-card-button">
+        Add Card
+      </Button>
     </Container>
   );
 };
