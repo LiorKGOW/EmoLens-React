@@ -1,12 +1,17 @@
-import { Container, Typography } from "@mui/material";
+import React from "react";
+import { Typography, Container } from "@mui/material";
 
 import NavBar from "../components/NavBar";
+import Gallery from "../components/Gallery";
 
-const EmptyPage = () => {
+import { cards } from "../resources/Mock Data/mockData";
+
+const GalleryPage = () => {
   return (
-    <>
+    <div className="gallery-page">
       <NavBar />
-      <Container maxWidth="sm" className="empty-page-content">
+
+      <Container maxWidth="sm">
         <Typography
           component="h1"
           variant="h2"
@@ -14,7 +19,7 @@ const EmptyPage = () => {
           color="text.primary"
           gutterBottom
         >
-          Unfortunately, this page is empty for now...
+          Gallery Page
         </Typography>
         <Typography
           variant="h5"
@@ -22,11 +27,13 @@ const EmptyPage = () => {
           color="text.secondary"
           paragraph
         >
-          It will be added in the future !
+          Here you can view all the people you have met
         </Typography>
       </Container>
-    </>
+
+      <Gallery cards={cards} />
+    </div>
   );
 };
 
-export default EmptyPage;
+export default GalleryPage;
