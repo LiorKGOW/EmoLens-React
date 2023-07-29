@@ -11,11 +11,11 @@ const NavBar = () => {
 
   const handleNavItemClick = (pageName) => {
 
-    if(pageName == 'Gallery') {
+    if(pageName === 'Gallery') {
       navigate(HOME_ROUTE);
-    } else if(pageName == 'Profile') {
+    } else if(pageName === 'Profile') {
       navigate(PROFILE_ROUTE);
-    } else if(pageName == 'About Us') {
+    } else if(pageName === 'About Us') {
       navigate(ABOUT_ROUTE);
     } else {
       console.log(`This page cannot be found: ${pageName}`);
