@@ -11,8 +11,6 @@ const NavBar = () => {
 
   const handleNavItemClick = (pageName) => {
 
-    console.log("pageName: ", pageName);
-
     if(pageName == 'Gallery') {
       navigate(HOME_ROUTE);
     } else if(pageName == 'Profile') {
