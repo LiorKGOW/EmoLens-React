@@ -1,11 +1,13 @@
 import { Container, Typography } from "@mui/material";
 
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const EmptyPage = () => {
   return (
-    <>
+    <div className="empty-page">
       <NavBar />
+
       <Container maxWidth="sm" className="empty-page-content">
         <Typography
           component="h1"
@@ -25,7 +27,9 @@ const EmptyPage = () => {
           It will be added in the future !
         </Typography>
       </Container>
-    </>
+
+      <Footer />
+    </div>
   );
 };
 
