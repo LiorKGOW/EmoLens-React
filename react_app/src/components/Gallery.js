@@ -12,7 +12,7 @@ const Gallery = (props) => {
     <Container sx={{ py: 5 }} maxWidth="md" className="card-gallery">
       <Grid container spacing={4}>
         {isCardsEmpty ? (
-          cards.map((card) => <GalleryItem card={card} />)
+          cards.map((card) => <GalleryItem key={card.id} card={card} />)
         ) : (
           <Typography
             variant="h5"
