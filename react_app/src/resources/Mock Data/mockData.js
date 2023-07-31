@@ -37,10 +37,4 @@ export const cards = [
         "description": "bla bla bla 1231",
         "image": "https://previews.123rf.com/images/bowie15/bowie151401/bowie15140100076/39843044-shocked-face-guy.jpg",
     },
-    {
-        "id": 11,
-        "title": "Lorem ipsum dolor sit amet",
-        "description": "bla bla bla 11",
-        "image": "https://source.unsplash.com/random?wallpapers",
-    },
 ];

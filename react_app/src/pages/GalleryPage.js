@@ -3,6 +3,7 @@ import { Typography, Container } from "@mui/material";
 
 import NavBar from "../components/NavBar";
 import Gallery from "../components/Gallery";
+import Footer from "../components/Footer";
 
 import { cards } from "../resources/Mock Data/mockData";
 
@@ -32,6 +33,8 @@ const GalleryPage = () => {
       </Container>
 
       <Gallery cards={cards} />
+
+      <Footer />
     </div>
   );
 };
