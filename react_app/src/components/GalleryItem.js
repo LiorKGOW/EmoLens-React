@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import {
   Grid,
   Card,
+  CardActions,
   CardContent,
   CardMedia,
+  Button,
   Typography,
 } from "@mui/material";
 
@@ -11,6 +13,10 @@ const GalleryItem = (props) => {
   const {
     card: { id, title, description, image },
   } = props;
+
+  const handleViewCardClick = () => {
+    // TODO: Add logic for viewing card
+  };
 
   const [isRaised, setIsRaised] = useState(false);
 
@@ -43,6 +49,11 @@ const GalleryItem = (props) => {
           </Typography>
           <Typography>{description}</Typography>
         </CardContent>
+        <CardActions>
+          <Button size="small" variant="contained" onClick={handleViewCardClick}>
+            View
+          </Button>
+        </CardActions>
       </Card>
     </Grid>
   );
