@@ -12,6 +12,7 @@ import reportWebVitals from './reportWebVitals';
 // Pages :
 import GalleryPage from './pages/GalleryPage';
 import EmptyPage from './pages/EmptyPage';
+import AboutPage from './pages/AboutPage';
 
 import { HOME_ROUTE, PROFILE_ROUTE, ABOUT_ROUTE } from './RouteConstants';
 
@@ -21,7 +22,7 @@ root.render(
     <Routes>
       <Route path={HOME_ROUTE} element={<GalleryPage />} exact />
       <Route path={PROFILE_ROUTE} element={<EmptyPage />} exact />
-      <Route path={ABOUT_ROUTE} element={<EmptyPage />} exact />
+      <Route path={ABOUT_ROUTE} element={<AboutPage />} exact />
     </Routes>
   </Router>
 );
